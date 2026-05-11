@@ -1,4 +1,4 @@
-import { translations, Language } from '../lib/translations';
+﻿import { translations, Language } from '../lib/translations';
 
 interface SalesManagementProps {
   lang: Language;
@@ -126,3 +126,4 @@ export default function SalesManagement({ lang }: SalesManagementProps) {
     </div>
   );
 }
+

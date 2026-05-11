@@ -1,4 +1,4 @@
-import { translations, Language } from '../lib/translations';
+﻿import { translations, Language } from '../lib/translations';
 
 interface CEOAssistantProps {
   lang: Language;
@@ -97,3 +97,4 @@ export default function CEOAssistant({ lang }: CEOAssistantProps) {
     </div>
   );
 }
+

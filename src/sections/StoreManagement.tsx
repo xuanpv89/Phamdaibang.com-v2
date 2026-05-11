@@ -1,4 +1,4 @@
-import { translations, Language } from '../lib/translations';
+﻿import { translations, Language } from '../lib/translations';
 
 interface StoreManagementProps {
   lang: Language;
@@ -103,3 +103,4 @@ export default function StoreManagement({ lang }: StoreManagementProps) {
     </div>
   );
 }
+

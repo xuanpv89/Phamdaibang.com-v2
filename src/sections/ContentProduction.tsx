@@ -4,7 +4,7 @@ interface ContentProductionProps {
   lang: Language;
 }
 
-export default function ContentProduction({ lang }: CEOAssistantProps) {
+export default function ContentProduction({ lang }: ContentProductionProps) {
   const t = translations[lang];
 
   return (
@@ -88,3 +88,4 @@ export default function ContentProduction({ lang }: CEOAssistantProps) {
     </div>
   );
 }
+

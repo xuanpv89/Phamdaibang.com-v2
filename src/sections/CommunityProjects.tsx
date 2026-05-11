@@ -1,4 +1,4 @@
-import { translations, Language } from '../lib/translations';
+﻿import { translations, Language } from '../lib/translations';
 
 interface CommunityProjectsProps {
   lang: Language;
@@ -107,3 +107,4 @@ export default function CommunityProjects({ lang }: CommunityProjectsProps) {
     </div>
   );
 }
+

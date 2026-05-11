@@ -1,4 +1,4 @@
-import { translations, Language } from '../lib/translations';
+﻿import { translations, Language } from '../lib/translations';
 
 interface ProjectManagerProps {
   lang: Language;
@@ -124,3 +124,4 @@ export default function ProjectManager({ lang }: ProjectManagerProps) {
     </div>
   );
 }
+

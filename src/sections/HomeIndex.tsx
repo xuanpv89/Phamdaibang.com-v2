@@ -1,4 +1,4 @@
-import { PageId } from '../App';
+﻿import { PageId } from '../App';
 import { translations, Language } from '../lib/translations';
 
 interface HomeIndexProps {
@@ -130,3 +130,4 @@ export default function HomeIndex({ onNavigate, lang }: HomeIndexProps) {
     </div>
   );
 }
+

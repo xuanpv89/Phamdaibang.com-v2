@@ -28,9 +28,17 @@ export const translations = {
       prev: 'Previous',
       next: 'Next',
     },
+    contact: {
+      email: 'xuanpv89@gmail.com',
+      phone: '+84 973 768 653',
+      addressHanoi: 'Dao Tan, Ba Dinh, Hanoi',
+      addressHCMC: 'Su Van Hanh, D10, HCMC',
+      emailSubject: 'Hello from your portfolio',
+    },
     home: {
       headline: 'Phạm\nĐại Bàng',
-      description: 'Crafting digital and physical experiences that merge operation precision with aesthetic elegance. Specializing in high-performance team leadership and minimalist brand systems.',
+      description:
+        'Crafting digital and physical experiences that merge operation precision with aesthetic elegance. Specializing in high-performance team leadership and minimalist brand systems.',
     },
     about: {
       title: 'ABOUT ME',
@@ -41,37 +49,56 @@ export const translations = {
       contact: 'Contact',
       organizingTitle: 'Events & Programs',
       organizingSubtitle: 'Organizing and facilitation excellence',
+      organizingDesc:
+        'Coordinated and facilitated over 10 corporate-scale events and 50+ transformative training programs with absolute precision.',
       contentTitle: 'Content',
       contentSubtitle: 'Multimedia production and editorial management',
-      story: 'Passionate about communication, I contribute to business success while creating societal value through strategic coordination and human development.',
+      contentDesc:
+        'Managing multimedia content production systems, optimizing editorial processes, and expanding expert networks.',
+      story:
+        'Passionate about communication, I contribute to business success while creating societal value through strategic coordination and human development.',
       bioItems: [
         'Deep immersion in communication across varied industries.',
         'Proven track record in Creative & Innovation organizations.',
         'Hybrid background: Ownership mindset + Strategic execution.',
-        'Experience spanning from ground execution to high-level management.'
+        'Experience spanning from ground execution to high-level management.',
       ],
     },
     competencies: {
       title: 'COMPETENCIES',
       subtitle: 'Skills & Education',
       humanDev: 'HUMAN DEVELOPMENT',
-      humanDevDesc: 'Mastering skills in working with people: networking, head-hunt, guiding - training, handling conflicts & building relationships.',
+      humanDevDesc:
+        'Mastering skills in working with people: networking, head-hunt, guiding - training, handling conflicts & building relationships.',
       communication: 'COMMUNICATION',
-      communicationDesc: 'Applying deep and wide skill sets in communication and sales for business, management, and personal branding purposes.',
+      communicationDesc:
+        'Applying deep and wide skill sets in communication and sales for business, management, and personal branding purposes.',
       contentCreation: 'CONTENT CREATION',
-      contentCreationDesc: 'Leveraging content (writing, podcast, video) as a vital medium for multi-purpose strategic applications.',
+      contentCreationDesc:
+        'Leveraging content (writing, podcast, video) as a vital medium for multi-purpose strategic applications.',
       highTech: 'HIGH-TECH',
-      highTechDesc: 'Proficient application of tools and systems to administration, sales, and operations with a focus on future trends.',
+      highTechDesc:
+        'Proficient application of tools and systems to administration, sales, and operations with a focus on future trends.',
       knowledgeBase: 'Knowledge Base',
       psychology: 'Psychology',
-      psychologyDesc: 'Deep translation and authorship of psychology-focused articles and theoretical frameworks.',
+      psychologyDesc:
+        'Deep translation and authorship of psychology-focused articles and theoretical frameworks.',
       research: 'Research',
-      researchDesc: 'Dedicated academic research and self-study methodologies for complex system analysis.',
+      researchDesc:
+        'Dedicated academic research and self-study methodologies for complex system analysis.',
       mediaRelations: 'Media Relations',
-      mediaRelationsDesc: 'Established history with journalists, TV stations, and PR agencies for broad-scale impact.',
+      mediaRelationsDesc:
+        'Established history with journalists, TV stations, and PR agencies for broad-scale impact.',
       cLevelNetwork: 'C-Level Network',
-      cLevelNetworkDesc: 'Extensive experience coordinating with leaders, entrepreneurs, and global speakers.',
+      cLevelNetworkDesc:
+        'Extensive experience coordinating with leaders, entrepreneurs, and global speakers.',
       education: 'Education',
+      neu: 'National Economics University',
+      neuDegree: 'Bachelor | Planning & Development',
+      fsb: 'FSB (FPT University)',
+      fsbDegree: 'Middle Manager Program',
+      siy: 'SIY Leadership Institute',
+      siyDegree: 'Search Inside Yourself Certification',
     },
     sections: {
       about: { label: 'ABOUT ME', desc: 'Personal story, timeline and core values.' },
@@ -80,8 +107,8 @@ export const translations = {
       storeManagement: { label: 'STORE MANAGEMENT', desc: 'Operational leadership at The Coffee House.' },
       salesManagement: { label: 'SALES MANAGEMENT', desc: 'Market expansion and team leadership at GHN.' },
       contentProduction: { label: 'CONTENT PRODUCTION', desc: 'Multimedia production and editorial strategy.' },
-      projectsCampaigns: { label: 'PROJECTS \u0026 CAMPAIGNS', desc: 'Freelance activities and channel development.' },
-      eventsTraining: { label: 'EVENTS \u0026 TRAINING', desc: 'Facilitating transformative workshops and talks.' },
+      projectsCampaigns: { label: 'PROJECTS & CAMPAIGNS', desc: 'Freelance activities and channel development.' },
+      eventsTraining: { label: 'EVENTS & TRAINING', desc: 'Facilitating transformative workshops and talks.' },
       onlineChannels: { label: 'ONLINE CHANNELS', desc: 'Organic growth and community build-up.' },
       communityProjects: { label: 'COMMUNITY PROJECTS', desc: 'Social impact initiatives and community engagement.' },
       contentProjects: { label: 'CONTENT PROJECTS', desc: 'Strategic writing and digital media storytelling.' },
@@ -89,7 +116,17 @@ export const translations = {
       keyCompetency: { label: 'KEY COMPETENCIES', desc: 'Human development and technical proficiency.' },
       achievements: { label: 'ACHIEVEMENTS', desc: 'Major awards and professional milestones.' },
       blog: { label: 'BLOG', desc: 'Thoughts, insights, and stories.' },
-    }
+    },
+    aria: {
+      toggleTheme: 'Toggle color theme',
+      toggleLang: 'Switch language to Vietnamese',
+      prevPage: 'Go to previous page',
+      nextPage: 'Go to next page',
+      navHome: 'Navigate to Home',
+      navAbout: 'Navigate to About',
+      navWorks: 'Navigate to Works',
+      navBlog: 'Navigate to Blog',
+    },
   },
   vi: {
     nav: {
@@ -118,50 +155,77 @@ export const translations = {
       prev: 'Trước',
       next: 'Tiếp',
     },
+    contact: {
+      email: 'xuanpv89@gmail.com',
+      phone: '+84 973 768 653',
+      addressHanoi: 'Đào Tấn, Ba Đình, Hà Nội',
+      addressHCMC: 'Sư Vạn Hạnh, Q10, TP.HCM',
+      emailSubject: 'Xin chào từ portfolio của bạn',
+    },
     home: {
       headline: 'Phạm\nĐại Bàng',
-      description: 'Kiến tạo các trải nghiệm kỹ thuật số và thực tế, kết hợp sự chính xác trong vận hành với vẻ đẹp thẩm mỹ. Chuyên về thấu hiểu con người, lãnh đạo đội ngũ hiệu suất cao và hệ thống thương hiệu tối giản.',
+      description:
+        'Kiến tạo các trải nghiệm kỹ thuật số và thực tế, kết hợp sự chính xác trong vận hành với vẻ đẹp thẩm mỹ. Chuyên về thấu hiểu con người, lãnh đạo đội ngũ hiệu suất cao và hệ thống thương hiệu tối giản.',
     },
     about: {
       title: 'VỀ TÔI',
-      subtitle: 'Bối cảnh \u0026 Triết lý',
+      subtitle: 'Bối cảnh & Triết lý',
       timeline: 'Lộ trình phát triển',
       expertiseTitle: 'Chuyên môn',
       expertiseSubtitle: 'Hơn một thập kỷ kinh nghiệm chiến lược',
       contact: 'Liên hệ',
-      organizingTitle: 'Sự kiện \u0026 Chương trình',
+      organizingTitle: 'Sự kiện & Chương trình',
       organizingSubtitle: 'Sự xuất sắc trong tổ chức và điều phối',
+      organizingDesc:
+        'Điều phối và dẫn dắt hơn 10 sự kiện quy mô doanh nghiệp và hơn 50 chương trình đào tạo chuyển hóa với độ chính xác tuyệt đối.',
       contentTitle: 'Nội dung',
       contentSubtitle: 'Sản xuất đa phương tiện và quản trị biên tập',
-      story: 'Đam mê truyền thông, tôi đóng góp vào sự thành công của doanh nghiệp đồng thời tạo ra giá trị xã hội thông qua sự điều phối chiến lược và phát triển con người.',
+      contentDesc:
+        'Quản trị hệ thống sản xuất nội dung đa phương tiện, tối ưu hóa quy trình biên tập và mở rộng mạng lưới chuyên gia.',
+      story:
+        'Đam mê truyền thông, tôi đóng góp vào sự thành công của doanh nghiệp đồng thời tạo ra giá trị xã hội thông qua sự điều phối chiến lược và phát triển con người.',
       bioItems: [
         'Đắm mình sâu sắc trong lĩnh vực truyền thông qua nhiều ngành công nghiệp.',
         'Chứng minh năng lực tại các tổ chức Sáng tạo & Đổi mới.',
         'Nền tảng kép: Tư duy sở hữu + Thực thi chiến lược.',
-        'Kinh nghiệm trải dài từ thực thi trực tiếp đến quản lý cấp cao.'
+        'Kinh nghiệm trải dài từ thực thi trực tiếp đến quản lý cấp cao.',
       ],
     },
     competencies: {
       title: 'NĂNG LỰC',
-      subtitle: 'Kỹ năng \u0026 Học vấn',
+      subtitle: 'Kỹ năng & Học vấn',
       humanDev: 'PHÁT TRIỂN CON NGƯỜI',
-      humanDevDesc: 'Làm chủ các kỹ năng làm việc với con người: kết nối, tuyển dụng, hướng dẫn - đào tạo, xử lý xung đột và xây dựng mối quan hệ.',
+      humanDevDesc:
+        'Làm chủ các kỹ năng làm việc với con người: kết nối, tuyển dụng, hướng dẫn - đào tạo, xử lý xung đột và xây dựng mối quan hệ.',
       communication: 'TRUYỀN THÔNG',
-      communicationDesc: 'Áp dụng bộ kỹ năng sâu rộng trong truyền thông và bán hàng cho mục đích kinh doanh, quản lý và thương hiệu cá nhân.',
+      communicationDesc:
+        'Áp dụng bộ kỹ năng sâu rộng trong truyền thông và bán hàng cho mục đích kinh doanh, quản lý và thương hiệu cá nhân.',
       contentCreation: 'SÁNG TẠO NỘI DUNG',
-      contentCreationDesc: 'Sử dụng nội dung (viết, podcast, video) như một phương tiện quan trọng cho các ứng dụng chiến lược đa mục tiêu.',
+      contentCreationDesc:
+        'Sử dụng nội dung (viết, podcast, video) như một phương tiện quan trọng cho các ứng dụng chiến lược đa mục tiêu.',
       highTech: 'CÔNG NGHỆ CAO',
-      highTechDesc: 'Sử dụng thành thạo các công cụ và hệ thống vào quản trị, bán hàng và vận hành với sự tập trung vào các xu hướng tương lai.',
+      highTechDesc:
+        'Sử dụng thành thạo các công cụ và hệ thống vào quản trị, bán hàng và vận hành với sự tập trung vào các xu hướng tương lai.',
       knowledgeBase: 'Nền tảng kiến thức',
       psychology: 'Tâm lý học',
-      psychologyDesc: 'Dịch thuật sâu và viết nhiều bài viết/nội dung về tâm lý học và các khung lý thuyết.',
+      psychologyDesc:
+        'Dịch thuật sâu và viết nhiều bài viết/nội dung về tâm lý học và các khung lý thuyết.',
       research: 'Nghiên cứu',
-      researchDesc: 'Phương pháp tự học, đọc và nghiên cứu học thuật dành cho việc phân tích các hệ thống phức tạp.',
+      researchDesc:
+        'Phương pháp tự học, đọc và nghiên cứu học thuật dành cho việc phân tích các hệ thống phức tạp.',
       mediaRelations: 'Quan hệ truyền thông',
-      mediaRelationsDesc: 'Lịch sử làm việc lâu dài với các nhà báo, đài truyền hình và đối tác truyền thông.',
+      mediaRelationsDesc:
+        'Lịch sử làm việc lâu dài với các nhà báo, đài truyền hình và đối tác truyền thông.',
       cLevelNetwork: 'Mạng lưới lãnh đạo',
-      cLevelNetworkDesc: 'Kinh nghiệm sâu rộng trong việc kết nối với các lãnh đạo, doanh nhân và chuyên gia/diễn giả.',
+      cLevelNetworkDesc:
+        'Kinh nghiệm sâu rộng trong việc kết nối với các lãnh đạo, doanh nhân và chuyên gia/diễn giả.',
       education: 'Giáo dục',
+      neu: 'Đại học Kinh tế Quốc dân',
+      neuDegree: 'Cử nhân | Kế hoạch & Phát triển',
+      fsb: 'FSB (Đại học FPT)',
+      fsbDegree: 'Chương trình Quản lý Cấp trung',
+      siy: 'SIY Leadership Institute',
+      siyDegree: 'Chứng chỉ Search Inside Yourself',
     },
     sections: {
       about: { label: 'GIỚI THIỆU', desc: 'Câu chuyện cá nhân, lộ trình và các giá trị cốt lõi.' },
@@ -170,8 +234,8 @@ export const translations = {
       storeManagement: { label: 'QUẢN LÝ CỬA HÀNG', desc: 'Lãnh đạo vận hành tại The Coffee House.' },
       salesManagement: { label: 'QUẢN LÝ BÁN HÀNG', desc: 'Mở rộng thị trường và lãnh đạo đội ngũ tại GHN.' },
       contentProduction: { label: 'SẢN XUẤT NỘI DUNG', desc: 'Sản xuất đa phương tiện và chiến lược biên tập.' },
-      projectsCampaigns: { label: 'DỰ ÁN \u0026 CHIẾN DỊCH', desc: 'Các hoạt động tự do và phát triển kênh.' },
-      eventsTraining: { label: 'SỰ KIỆN \u0026 ĐÀO TẠO', desc: 'Điều phối các buổi thảo luận và đào tạo chuyển hóa.' },
+      projectsCampaigns: { label: 'DỰ ÁN & CHIẾN DỊCH', desc: 'Các hoạt động tự do và phát triển kênh.' },
+      eventsTraining: { label: 'SỰ KIỆN & ĐÀO TẠO', desc: 'Điều phối các buổi thảo luận và đào tạo chuyển hóa.' },
       onlineChannels: { label: 'KÊNH TRỰC TUYẾN', desc: 'Tăng trưởng tự nhiên và xây dựng cộng đồng.' },
       communityProjects: { label: 'DỰ ÁN CỘNG ĐỒNG', desc: 'Các sáng kiến tác động xã hội và kết nối cộng đồng.' },
       contentProjects: { label: 'DỰ ÁN NỘI DUNG', desc: 'Viết lách chiến lược và kể chuyện đa phương tiện.' },
@@ -179,6 +243,16 @@ export const translations = {
       keyCompetency: { label: 'NĂNG LỰC CỐT LÕI', desc: 'Phát triển con người và năng lực kỹ thuật.' },
       achievements: { label: 'THÀNH TỰU', desc: 'Các giải thưởng lớn và cột mốc chuyên nghiệp.' },
       blog: { label: 'BLOG', desc: 'Những suy nghĩ, góc nhìn và câu chuyện.' },
-    }
-  }
+    },
+    aria: {
+      toggleTheme: 'Chuyển đổi chủ đề màu sắc',
+      toggleLang: 'Chuyển ngôn ngữ sang tiếng Anh',
+      prevPage: 'Đến trang trước',
+      nextPage: 'Đến trang tiếp theo',
+      navHome: 'Đến trang chủ',
+      navAbout: 'Đến trang giới thiệu',
+      navWorks: 'Đến trang công việc',
+      navBlog: 'Đến trang blog',
+    },
+  },
 };
