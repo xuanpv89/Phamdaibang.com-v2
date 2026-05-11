@@ -27,6 +27,7 @@ export default function HomeIndex({ onNavigate, lang }: HomeIndexProps) {
     { label: t.sections.eventsTraining.label, id: 'events-training', num: '14', desc: t.sections.eventsTraining.desc },
     { label: t.sections.keyCompetency.label, id: 'key-competency', num: '15', desc: t.sections.keyCompetency.desc },
     { label: t.sections.achievements.label, id: 'achievements', num: '16', desc: t.sections.achievements.desc },
+    { label: t.sections.blog.label, id: 'blog', num: '09', desc: t.sections.blog.desc },
   ];
 
   return (
@@ -83,7 +84,7 @@ export default function HomeIndex({ onNavigate, lang }: HomeIndexProps) {
                 <span className="text-[10px] text-accent uppercase block tracking-[0.3em] font-bold">
                   {item.num} / {item.id.replace(/-/g, ' ')}
                 </span>
-                <h3 className="text-2xl font-serif font-light italic group-hover:pl-4 transition-all duration-500">
+                <h3 className="text-2xl font-display font-black uppercase tracking-tight group-hover:pl-4 transition-all duration-500">
                   {item.label}
                 </h3>
               </div>
@@ -114,7 +115,7 @@ export default function HomeIndex({ onNavigate, lang }: HomeIndexProps) {
                 <span className="text-[10px] text-text/40 uppercase block tracking-[0.3em]">
                   {item.num} / {item.id.replace(/-/g, ' ')}
                 </span>
-                <h3 className="text-2xl font-serif font-light italic group-hover:pl-4 transition-all duration-500">
+                <h3 className="text-2xl font-display font-black uppercase tracking-tight group-hover:pl-4 transition-all duration-500">
                   {item.label}
                 </h3>
               </div>

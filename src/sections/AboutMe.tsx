@@ -12,7 +12,7 @@ export default function AboutMe({ lang }: AboutMeProps) {
     <div className="space-y-32 py-12">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row justify-between items-end geometric-border-b pb-12 gap-8">
-        <h2 className="text-[60px] md:text-[100px] leading-none font-display font-black tracking-tighter uppercase opacity-90">
+        <h2 className="text-[60px] md:text-[100px] leading-none font-display font-black tracking-tighter uppercase">
           {t.about.title}
         </h2>
         <div className="text-right">
@@ -27,9 +27,9 @@ export default function AboutMe({ lang }: AboutMeProps) {
           <div className="relative group">
             <div className="aspect-[4/5] bg-primary/5 border border-border overflow-hidden relative">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" 
-                alt="Profile" 
-                className="w-full h-full object-cover grayscale contrast-125 opacity-80 group-hover:scale-105 transition-transform duration-700"
+                src="/profile.jpg" 
+                alt="Pham Dai Bang" 
+                className="w-full h-full object-cover grayscale opacity-90 group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>

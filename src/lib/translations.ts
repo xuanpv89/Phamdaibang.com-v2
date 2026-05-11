@@ -88,6 +88,7 @@ export const translations = {
       eventProjects: { label: 'EVENT PROJECTS', desc: 'End-to-end planning of corporate and creative events.' },
       keyCompetency: { label: 'KEY COMPETENCIES', desc: 'Human development and technical proficiency.' },
       achievements: { label: 'ACHIEVEMENTS', desc: 'Major awards and professional milestones.' },
+      blog: { label: 'BLOG', desc: 'Thoughts, insights, and stories.' },
     }
   },
   vi: {
@@ -177,6 +178,7 @@ export const translations = {
       eventProjects: { label: 'DỰ ÁN SỰ KIỆN', desc: 'Lên kế hoạch toàn diện cho các sự kiện doanh nghiệp.' },
       keyCompetency: { label: 'NĂNG LỰC CỐT LÕI', desc: 'Phát triển con người và năng lực kỹ thuật.' },
       achievements: { label: 'THÀNH TỰU', desc: 'Các giải thưởng lớn và cột mốc chuyên nghiệp.' },
+      blog: { label: 'BLOG', desc: 'Những suy nghĩ, góc nhìn và câu chuyện.' },
     }
   }
 };

@@ -57,7 +57,7 @@ export default function Blog({ lang }: BlogProps) {
           </p>
         </div>
         <div className="text-right">
-          <div className="text-4xl font-serif italic mb-1 opacity-20">12 //</div>
+          <div className="text-4xl font-serif italic mb-1 opacity-20">09 //</div>
           <p className="text-[10px] uppercase tracking-[0.3em] opacity-30">Articles & Essays</p>
         </div>
       </div>

@@ -9,13 +9,13 @@ export default function KeyCompetency({ lang }: KeyCompetencyProps) {
 
   return (
     <div className="space-y-24 py-12">
-      <div className="flex flex-col md:flex-row justify-between items-end border-b border-white/10 pb-12 gap-8">
-        <h2 className="text-[60px] md:text-[80px] leading-none font-serif font-black tracking-tighter uppercase opacity-90">
+      <div className="flex flex-col md:flex-row justify-between items-end border-b border-border pb-12 gap-8">
+        <h2 className="text-[60px] md:text-[80px] font-display font-black leading-none tracking-tighter uppercase">
           {t.competencies.title}
         </h2>
         <div className="text-right">
-          <div className="text-4xl font-serif italic mb-1 text-white/40">15 //</div>
-          <p className="text-[10px] uppercase tracking-[0.3em] text-white/30">{t.competencies.subtitle}</p>
+          <div className="text-4xl font-serif italic mb-1 opacity-20">15 //</div>
+          <p className="text-[10px] uppercase tracking-[0.3em] opacity-30">{t.competencies.subtitle}</p>
         </div>
       </div>
 

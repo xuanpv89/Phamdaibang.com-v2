@@ -128,7 +128,7 @@ export default function App() {
       {/* Top Navigation & Branding */}
       <header className="flex items-center justify-between px-12 h-24 border-b border-border shrink-0 relative z-20 bg-bg/80 backdrop-blur-sm">
         <div className="flex items-baseline space-x-2">
-          <span className="text-2xl font-serif font-black tracking-tighter uppercase cursor-pointer" onClick={() => goToPage('home')}>Phạm Đại Bàng</span>
+          <span className="text-2xl font-display font-black tracking-tighter uppercase cursor-pointer" onClick={() => goToPage('home')}>Phạm Đại Bàng</span>
           <span className="text-[10px] uppercase tracking-widest text-text/40">{t.common.v2024}</span>
         </div>
         
