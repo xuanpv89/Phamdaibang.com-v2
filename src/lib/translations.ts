@@ -23,6 +23,10 @@ export const translations = {
       readStory: 'Read Story',
       curatedWork: 'Curated Work',
       portfolioIndex: 'Portfolio Index',
+      experience: 'Work Experience',
+      projects: 'Projects & Knowledge',
+      prev: 'Previous',
+      next: 'Next',
     },
     home: {
       headline: 'Phạm\nĐại Bàng',
@@ -39,6 +43,13 @@ export const translations = {
       organizingSubtitle: 'Organizing and facilitation excellence',
       contentTitle: 'Content',
       contentSubtitle: 'Multimedia production and editorial management',
+      story: 'Passionate about communication, I contribute to business success while creating societal value through strategic coordination and human development.',
+      bioItems: [
+        'Deep immersion in communication across varied industries.',
+        'Proven track record in Creative & Innovation organizations.',
+        'Hybrid background: Ownership mindset + Strategic execution.',
+        'Experience spanning from ground execution to high-level management.'
+      ],
     },
     competencies: {
       title: 'COMPETENCIES',
@@ -72,7 +83,11 @@ export const translations = {
       projectsCampaigns: { label: 'PROJECTS \u0026 CAMPAIGNS', desc: 'Freelance activities and channel development.' },
       eventsTraining: { label: 'EVENTS \u0026 TRAINING', desc: 'Facilitating transformative workshops and talks.' },
       onlineChannels: { label: 'ONLINE CHANNELS', desc: 'Organic growth and community build-up.' },
+      communityProjects: { label: 'COMMUNITY PROJECTS', desc: 'Social impact initiatives and community engagement.' },
+      contentProjects: { label: 'CONTENT PROJECTS', desc: 'Strategic writing and digital media storytelling.' },
+      eventProjects: { label: 'EVENT PROJECTS', desc: 'End-to-end planning of corporate and creative events.' },
       keyCompetency: { label: 'KEY COMPETENCIES', desc: 'Human development and technical proficiency.' },
+      achievements: { label: 'ACHIEVEMENTS', desc: 'Major awards and professional milestones.' },
     }
   },
   vi: {
@@ -97,6 +112,10 @@ export const translations = {
       readStory: 'Đọc câu chuyện',
       curatedWork: 'Dự án chọn lọc',
       portfolioIndex: 'Mục lục hồ sơ',
+      experience: 'Kinh nghiệm làm việc',
+      projects: 'Dự án & Kiến thức',
+      prev: 'Trước',
+      next: 'Tiếp',
     },
     home: {
       headline: 'Phạm\nĐại Bàng',
@@ -105,7 +124,7 @@ export const translations = {
     about: {
       title: 'VỀ TÔI',
       subtitle: 'Bối cảnh \u0026 Triết lý',
-      timeline: 'Lộ trình',
+      timeline: 'Lộ trình phát triển',
       expertiseTitle: 'Chuyên môn',
       expertiseSubtitle: 'Hơn một thập kỷ kinh nghiệm chiến lược',
       contact: 'Liên hệ',
@@ -113,6 +132,13 @@ export const translations = {
       organizingSubtitle: 'Sự xuất sắc trong tổ chức và điều phối',
       contentTitle: 'Nội dung',
       contentSubtitle: 'Sản xuất đa phương tiện và quản trị biên tập',
+      story: 'Đam mê truyền thông, tôi đóng góp vào sự thành công của doanh nghiệp đồng thời tạo ra giá trị xã hội thông qua sự điều phối chiến lược và phát triển con người.',
+      bioItems: [
+        'Đắm mình sâu sắc trong lĩnh vực truyền thông qua nhiều ngành công nghiệp.',
+        'Chứng minh năng lực tại các tổ chức Sáng tạo & Đổi mới.',
+        'Nền tảng kép: Tư duy sở hữu + Thực thi chiến lược.',
+        'Kinh nghiệm trải dài từ thực thi trực tiếp đến quản lý cấp cao.'
+      ],
     },
     competencies: {
       title: 'NĂNG LỰC',
@@ -137,7 +163,7 @@ export const translations = {
       education: 'Giáo dục',
     },
     sections: {
-      about: { label: 'VỀ TÔI', desc: 'Câu chuyện cá nhân, lộ trình và các giá trị cốt lõi.' },
+      about: { label: 'GIỚI THIỆU', desc: 'Câu chuyện cá nhân, lộ trình và các giá trị cốt lõi.' },
       projectManager: { label: 'QUẢN LÝ DỰ ÁN', desc: 'Điều phối cấp cao và chiến lược tại Compassio.' },
       ceoAssistant: { label: 'TRỢ LÝ CEO', desc: 'Chuẩn hóa quy trình và sự xuất sắc trong quản trị.' },
       storeManagement: { label: 'QUẢN LÝ CỬA HÀNG', desc: 'Lãnh đạo vận hành tại The Coffee House.' },
@@ -146,7 +172,11 @@ export const translations = {
       projectsCampaigns: { label: 'DỰ ÁN \u0026 CHIẾN DỊCH', desc: 'Các hoạt động tự do và phát triển kênh.' },
       eventsTraining: { label: 'SỰ KIỆN \u0026 ĐÀO TẠO', desc: 'Điều phối các buổi thảo luận và đào tạo chuyển hóa.' },
       onlineChannels: { label: 'KÊNH TRỰC TUYẾN', desc: 'Tăng trưởng tự nhiên và xây dựng cộng đồng.' },
+      communityProjects: { label: 'DỰ ÁN CỘNG ĐỒNG', desc: 'Các sáng kiến tác động xã hội và kết nối cộng đồng.' },
+      contentProjects: { label: 'DỰ ÁN NỘI DUNG', desc: 'Viết lách chiến lược và kể chuyện đa phương tiện.' },
+      eventProjects: { label: 'DỰ ÁN SỰ KIỆN', desc: 'Lên kế hoạch toàn diện cho các sự kiện doanh nghiệp.' },
       keyCompetency: { label: 'NĂNG LỰC CỐT LÕI', desc: 'Phát triển con người và năng lực kỹ thuật.' },
+      achievements: { label: 'THÀNH TỰU', desc: 'Các giải thưởng lớn và cột mốc chuyên nghiệp.' },
     }
   }
 };

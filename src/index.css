@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -7,14 +7,32 @@
   --font-mono: "Space Grotesk", monospace;
   --font-serif: "Playfair Display", serif;
   
-  --color-primary: #E5E5E5;
-  --color-secondary: #a1a1aa;
-  --color-accent: #ffffff;
+  --color-bg: var(--bg);
+  --color-text: var(--text);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+}
+
+:root {
+  --bg: #0F0F0F;
+  --text: #E5E5E5;
+  --border: rgba(255, 255, 255, 0.1);
+  --primary: #E5E5E5;
+  --accent: #FFFFFF;
+}
+
+:root.light {
+  --bg: #FAFAFA;
+  --text: #171717;
+  --border: rgba(0, 0, 0, 0.1);
+  --primary: #171717;
+  --accent: #000000;
 }
 
 @layer base {
   body {
-    @apply bg-[#0F0F0F] text-[#E5E5E5] font-sans antialiased selection:bg-white selection:text-black;
+    @apply bg-bg text-text font-sans antialiased selection:bg-primary selection:text-bg;
     overflow-x: hidden;
   }
 }
@@ -35,29 +53,34 @@
   opacity: 0.3;
 }
 
+:root.light .stars-container {
+  filter: invert(1);
+  opacity: 0.05;
+}
+
 .star {
   position: absolute;
-  background: white;
+  background: currentColor;
   border-radius: 50%;
   opacity: 0.5;
 }
 
 .glass-card {
-  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden;
+  @apply bg-primary/5 backdrop-blur-md border border-border rounded-xl overflow-hidden;
 }
 
 .geometric-border-b {
-  @apply border-b border-white/10;
+  @apply border-b border-border;
 }
 
 .geometric-border-r {
-  @apply border-r border-white/10;
+  @apply border-r border-border;
 }
 
 .geometric-border-l {
-  @apply border-l border-white/10;
+  @apply border-l border-border;
 }
 
 .geometric-border-t {
-  @apply border-t border-white/10;
+  @apply border-t border-border;
 }

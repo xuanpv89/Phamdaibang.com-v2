@@ -1,81 +1,123 @@
-export default function SalesManagement() {
-  return (
-    <div className="flex flex-col items-center justify-center py-10 space-y-12">
-      <h2 className="text-6xl md:text-8xl font-display font-black tracking-[0.3em] uppercase text-center w-full">
-        SALES MANAGEMENT
-      </h2>
+import { translations, Language } from '../lib/translations';
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full max-w-6xl">
-        <div className="space-y-8">
-          <div className="inline-block bg-white text-black px-6 py-2 font-bold tracking-widest text-sm uppercase rounded-full">
-            Business & Technology Industry
+interface SalesManagementProps {
+  lang: Language;
+}
+
+export default function SalesManagement({ lang }: SalesManagementProps) {
+  const t = translations[lang];
+
+  return (
+    <div className="space-y-24 py-12">
+      {/* Header Area */}
+      <div className="flex flex-col md:flex-row justify-between items-start geometric-border-b pb-12 gap-12">
+        <div className="space-y-6">
+          <div className="inline-block px-4 py-1 border border-accent/20 bg-accent/5 text-[10px] font-black uppercase tracking-[0.3em] text-accent">
+            {lang === 'vi' ? 'Ngành Kinh doanh & Công nghệ' : 'Business & Technology Industry'}
           </div>
-          <div className="space-y-2 text-left">
-            <h3 className="text-4xl font-display font-bold">GIAO HANG NHANH (GHN)</h3>
-            <p className="text-xl text-white/60">2013-2015 | ROLE: SALES MANAGER (FOUNDING MEMBER)</p>
+          <h2 className="text-[50px] md:text-[80px] leading-[0.9] font-display font-black tracking-tighter uppercase max-w-2xl">
+            {t.sections.salesManagement.label}
+          </h2>
+        </div>
+        <div className="md:text-right space-y-2">
+          <div className="text-4xl font-serif italic opacity-20">06 //</div>
+          <p className="text-xl font-display font-bold tracking-tight">GIAO HANG NHANH (GHN)</p>
+          <p className="text-xs uppercase tracking-[0.2em] opacity-40">2013 - 2015</p>
+        </div>
+      </div>
+
+      {/* Main Content Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+        {/* Left: Roles & Desc */}
+        <div className="lg:col-span-7 space-y-16">
+          <div className="space-y-12">
+            <div className="space-y-6">
+              <h3 className="text-2xl font-display font-black uppercase tracking-tight flex items-center gap-4">
+                <span className="w-8 h-px bg-accent"></span>
+                {lang === 'vi' ? 'Vai trò: Trưởng phòng Kinh doanh' : 'Role: Sales Manager'}
+              </h3>
+              <ul className="space-y-4 text-sm font-light leading-relaxed opacity-60">
+                {[
+                  lang === 'vi' ? 'Chịu trách nhiệm thị trường khu vực miền Bắc, xây dựng mạng lưới khách hàng (các công ty TMĐT lớn).' : 'Responsible for Northern region market, building a network of customers (big e-commerce company).',
+                  lang === 'vi' ? 'Làm việc chuyên sâu với các bộ phận khác, đội ngũ quản lý và Ban Giám đốc để thực hiện chiến lược kinh doanh.' : 'Cross-functional work with other departments, management team & BOD to implement business strategy.',
+                  lang === 'vi' ? 'Phát triển thương hiệu để đưa GHN trở thành top 5 trong ngành.' : 'Develop brand to become top 5 in the industry.'
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-4">
+                    <span className="text-accent/40 font-mono">/0{i+1}</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="space-y-6">
+              <h3 className="text-2xl font-display font-black uppercase tracking-tight flex items-center gap-4">
+                <span className="w-8 h-px bg-accent"></span>
+                {lang === 'vi' ? 'Vai trò: Trưởng nhóm Kinh doanh' : 'Role: Sales Lead'}
+              </h3>
+              <ul className="space-y-4 text-sm font-light leading-relaxed opacity-60">
+                {[
+                  lang === 'vi' ? 'Tiếp cận thị trường mới, lập kế hoạch và thực hiện các chiến dịch bán hàng.' : 'Reach new markets, plan & execute sales campaigns.',
+                  lang === 'vi' ? 'Quản lý, đào tạo và phân công công việc cho đội ngũ kinh doanh.' : 'Managing, training, assign work for sales team.'
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-4">
+                    <span className="text-accent/40 font-mono">/0{i+1}</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           
-          <div className="space-y-4">
-             <span className="uppercase tracking-[0.2em] font-bold text-xs opacity-40 block">Feature Photo</span>
-             <div className="grid grid-cols-3 gap-2">
-               <div className="aspect-square bg-white/5 rounded-sm overflow-hidden flex flex-col items-center justify-center border border-white/10 p-2 text-center">
-                 <div className="w-full h-full bg-white/10 rounded-sm mb-2"></div>
-                 <p className="text-[8px] uppercase tracking-tighter text-white/40 leading-tight">with Core Team GHN (core member)</p>
+          {/* Photos Grid */}
+          <div className="grid grid-cols-3 gap-4">
+             {[1,2,3].map(i => (
+               <div key={i} className="aspect-square bg-primary/5 border border-border group overflow-hidden relative">
+                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
+                 <div className="absolute inset-0 flex items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity bg-bg/90">
+                    <p className="text-[8px] uppercase tracking-widest font-bold">
+                       {i === 1 ? 'With Core Team GHN' : i === 2 ? 'E-commerce Conference' : 'With Partners'}
+                    </p>
+                 </div>
                </div>
-               <div className="aspect-square bg-white/5 rounded-sm overflow-hidden flex flex-col items-center justify-center border border-white/10 p-2 text-center">
-                 <div className="w-full h-full bg-white/10 rounded-sm mb-2"></div>
-                 <p className="text-[8px] uppercase tracking-tighter text-white/40 leading-tight">presentation in e-commerce conference</p>
-               </div>
-               <div className="aspect-square bg-white/5 rounded-sm overflow-hidden flex flex-col items-center justify-center border border-white/10 p-2 text-center">
-                 <div className="w-full h-full bg-white/10 rounded-sm mb-2"></div>
-                 <p className="text-[8px] uppercase tracking-tighter text-white/40 leading-tight">with e-commerce partner</p>
-               </div>
-             </div>
-          </div>
-
-          <div className="pt-8 border-t border-white/10 text-left">
-            <span className="uppercase tracking-[0.2em] font-bold text-sm block mb-6">Key Result</span>
-            <div className="grid grid-cols-2 gap-y-8 gap-x-4">
-              <div className="space-y-1">
-                <span className="text-4xl font-display font-black">25</span>
-                <p className="text-[10px] text-white/40 uppercase tracking-widest leading-tight">Big E-commerce Client</p>
-              </div>
-              <div className="space-y-1">
-                <span className="text-4xl font-display font-black">&gt;500</span>
-                <p className="text-[10px] text-white/40 uppercase tracking-widest leading-tight">Online client (Shop, individual)</p>
-              </div>
-              <div className="space-y-1">
-                <span className="text-4xl font-display font-black">12</span>
-                <p className="text-[10px] text-white/40 uppercase tracking-widest leading-tight">Staff</p>
-              </div>
-              <div className="space-y-1">
-                <span className="text-4xl font-display font-black">Top 5</span>
-                <p className="text-[10px] text-white/40 uppercase tracking-widest leading-tight">Contributing to bringing GHN into the top 5 in the industry</p>
-              </div>
-            </div>
+             ))}
           </div>
         </div>
 
-        <div className="space-y-10 text-left">
-          <div className="space-y-6">
-            <div className="flex items-center gap-4">
-               <div className="h-[2px] bg-white/20 flex-grow"></div>
-               <span className="uppercase tracking-[0.2em] font-bold text-sm">Key Activities</span>
+        {/* Right: Key Results */}
+        <div className="lg:col-span-5 space-y-12 lg:sticky lg:top-12">
+          <div className="p-8 border border-border bg-primary/[0.02] space-y-12">
+            <div className="space-y-4">
+              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-accent/40">
+                {lang === 'vi' ? 'KẾT QUẢ THEN CHỐT' : 'KEY RESULTS'}
+              </span>
+              <div className="h-px bg-border w-full"></div>
             </div>
-            <div className="space-y-12 font-light text-white/80 leading-relaxed">
-              <div>
-                <p className="font-bold text-white mb-4 underline decoration-white/20 underline-offset-4">Role: Sales Lead</p>
-                <ul className="list-decimal list-inside space-y-4 pl-2">
-                  <li>Reach new markets, plan & execute sales campaigns</li>
-                  <li>Managing, training, assign work for sales team</li>
-                </ul>
+
+            <div className="grid grid-cols-1 gap-12">
+              <div className="flex items-end justify-between">
+                <div className="text-6xl font-display font-black tracking-tighter">25</div>
+                <p className="text-[10px] uppercase tracking-widest text-right opacity-40 max-w-[120px]">
+                  {lang === 'vi' ? 'Khách hàng TMĐT lớn' : 'Big E-commerce Client'}
+                </p>
               </div>
-              <div>
-                <p className="font-bold text-white mb-4 underline decoration-white/20 underline-offset-4">Role: Sales Manager</p>
-                <ul className="list-decimal list-inside space-y-4 pl-2">
-                  <li>Responsible for Northern region market, building a network of customers (big e-commerce company)</li>
-                  <li>Cross-functional work with other departments, management team & BOD to implement business strategy, develop brand to become top 5 in the industry</li>
-                </ul>
+              <div className="flex items-end justify-between">
+                <div className="text-6xl font-display font-black tracking-tighter">&gt;500</div>
+                <p className="text-[10px] uppercase tracking-widest text-right opacity-40 max-w-[120px]">
+                  {lang === 'vi' ? 'Khách hàng trực tuyến (Shop, cá nhân)' : 'Online client (Shop, individual)'}
+                </p>
+              </div>
+              <div className="flex items-end justify-between">
+                <div className="text-6xl font-display font-black tracking-tighter">12</div>
+                <p className="text-[10px] uppercase tracking-widest text-right opacity-40 max-w-[120px]">
+                  {lang === 'vi' ? 'Nhân sự trực tiếp' : 'Direct Staff'}
+                </p>
+              </div>
+              <div className="pt-6 border-t border-border">
+                <div className="text-3xl font-display font-black tracking-tight text-accent italic">TOP 5 INDUSTRY</div>
+                <p className="text-[9px] uppercase tracking-widest opacity-40 mt-2">
+                   {lang === 'vi' ? 'Góp phần đưa GHN vào top 5 trong ngành' : 'Contributing to bringing GHN into the top 5 in the industry'}
+                </p>
               </div>
             </div>
           </div>
